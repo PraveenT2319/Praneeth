@@ -33,6 +33,115 @@
     <link rel="stylesheet" href="assets/css/blog.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <style>.tour-section {
+        padding: 30px 15px;
+        background: #fff;
+        border-bottom: 1px solid #ddd;
+      }
+    
+      .tour-container {
+        max-width: 1140px;
+        margin: 0 auto;
+      }
+    
+      .tour-heading {
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #222;
+        text-align: center;
+        font-weight: bold;
+        position: relative;
+      }
+    
+      .tour-heading::after {
+        content: "";
+        width: 60px;
+        height: 4px;
+        background: #28a745;
+        display: block;
+        margin: 10px auto 0;
+        border-radius: 2px;
+      }
+    
+      .tour-flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+      }
+    
+      .tour-image img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 10px;
+        transition: transform 0.4s ease;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+    
+      .tour-image img:hover {
+        transform: scale(1.05);
+      }
+    
+      .tour-details,
+      .tour-includes,
+      .tour-pricing {
+        margin-top: 20px;
+      }
+    
+      .tour-details ul,
+      .tour-includes ul {
+        padding-left: 20px;
+        line-height: 1.8;
+      }
+    
+      .tour-pricing table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+    
+      .tour-pricing th,
+      .tour-pricing td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+      }
+    
+      .tour-pricing th {
+        background-color: #f8f8f8;
+      }
+    
+      .tour-contact {
+        text-align: center;
+        margin-top: 30px;
+      }
+    
+      .tour-contact a {
+        display: inline-block;
+        background: #28a745;
+        color: #fff;
+        padding: 12px 25px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: 600;
+        transition: background 0.3s ease;
+      }
+    
+      .tour-contact a:hover {
+        background: #1e7e34;
+      }
+    
+      @media (max-width: 768px) {
+        .tour-flex {
+          flex-direction: column;
+        }
+        .tour-heading {
+          font-size: 22px;
+        }
+        .tour-pricing table, .tour-pricing th, .tour-pricing td {
+          font-size: 14px;
+        }
+      }</style>
 </head>
 
 <body>
@@ -130,40 +239,40 @@
                     </div>
                     <!--/.site-logo-->
                     <div class="header-menu-wrap">
-                        <ul class="nav-menu">
-                            <li><a href="index.html">Home</a></li>
-                                   <li><a href="about.html">About</a></li>
-                                   <li class="active dropdown_menu">
-                                     <a href="#">Tour Packages</a>
-                                     <ul>
-                                         <li><a href="Oneday.html">1 Day Tour Packages</a></li>
-                                         <li><a href="twodays.html">2 Day Tour Packages</a></li>
-                                         <li><a href="threeday.html">3 Day Tour Packages</a></li>
-                                         <li><a href="fourdays.html">4 Day Tour Packages</a></li>
-                                         <li><a href="fivedays.html">5 Day Tour Packages</a></li>
-                                         <li><a href="sixdays.html">6 Day Tour Packages</a></li>
-                                         <li><a href="temple.html">Temples Tour Packages</a></li>
+                      <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                               <li><a href="about.html">About</a></li>
+                               <li class=" dropdown_menu">
+                                 <a href="#">Tour Packages</a>
+                                 <ul>
+                                     <li><a href="Oneday.html">1 Day Tour Packages</a></li>
+                                     <li><a href="twodays.html">2 Day Tour Packages</a></li>
+                                     <li><a href="threeday.html">3 Day Tour Packages</a></li>
+                                     <li><a href="fourdays.html">4 Day Tour Packages</a></li>
+                                     <li><a href="fivedays.html">5 Day Tour Packages</a></li>
+                                     <li><a href="sixdays.html">6 Day Tour Packages</a></li>
+                                     <li><a href="temple.html">Temples Tour Packages</a></li>
 
-                                     </ul>
-                                 </li>
-                                 <li class="active dropdown_menu">
-                                     <a href="#">Tariff</a>
-                                     <ul>
-                                      <li><a href="outstationduty.html">Outstation Duty Day Basis.</a></li>
-                                         <li><a href="outstationdutyinkm.html">Outstation Duty km Basis</a></li>
-                                         <li><a href="localduty.html">Local Duty Hour Basis  </a></li>
-                                         <li><a href="fixeddrop.html">Fixed Drop Services</a></li>
-                                      
+                                 </ul>
+                             </li>
+                             <li class=" dropdown_menu">
+                                 <a href="#">Tariff</a>
+                                 <ul>
+                                     <li><a href="outstationduty.html">Outstation Duty Day Basis.</a></li>
+                                     <li><a href="outstationduty.html">Outstation Duty km Basis</a></li>
+                                     <li><a href="localduty.html">Local Duty Hour Basis  </a></li>
+                                     <li><a href="fixeddrop.html">Fixed Drop Services</a></li>
+                                  
 
-                                     </ul>
-                                 </li>
-                              
+                                 </ul>
+                             </li>
+                            
 
-                                          <li><a href="Fleet.html">Fleet</a></li>
-                                                 <li><a href="gallery.html">Gallery</a></li>
-                     
-                         <li><a href="contact.html">Contact</a></li>
-                     </ul>
+                                      <li><a href="Fleet.html">Fleet</a></li>
+                                             <li><a href="gallery.html">Gallery</a></li>
+                 
+                     <li><a href="contact.html">Contact</a></li>
+                 </ul>
                     </div>
                     <div class="menu-right-item">
                        
@@ -229,91 +338,274 @@
     </section>
     <!--/.page-header-->
 
-    <section class="team-section padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 padding-15">
-                    <div class="team-item">
-                        <div class="team-thumb">
-                            <img src="assets/img/car/car_01.png" alt="thumb">
-                        </div>
-                      
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 padding-15">
-                    <div class="team-item">
-                        <div class="team-thumb">
-                            <img src="assets/img/car/car_02.png" alt="thumb">
-                        </div>
-                      
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 padding-15">
-                    <div class="team-item">
-                        <div class="team-thumb">
-                            <img src="assets/img/car/car_03.png     " alt="thumb">
-                        </div>
-                       
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 padding-15">
-                    <div class="team-item">
-                        <div class="team-thumb">
-                            <img src="assets/img/car/car_04.png" alt="thumb">
-                        </div>
-                     
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 padding-15">
-                    <div class="team-item">
-                        <div class="team-thumb">
-                            <img src="assets/img/car/car_05.png" alt="thumb">
-                        </div>
-                       
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 padding-15">
-                    <div class="team-item">
-                        <div class="team-thumb">
-                            <img src="assets/img/car/car_06.png" alt="thumb">
-                        </div>
-                       
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 padding-15">
-                    <div class="team-item">
-                        <div class="team-thumb">
-                            <img src="assets/img/car/seat.png" alt="thumb">
-                        </div>
-                      
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 padding-15">
-                    <div class="team-item">
-                        <div class="team-thumb">
-                            <img src="assets/img/car/seat_03.png" alt="thumb">
-                        </div>
-                       
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--/.team-section-->
-    <a href="tel:+919789474515">
-        <button class="btn-floating phone">
-          <img src="https://i.imgur.com/FZuns9L.png" alt="Phone">
-          <span>
-            +91 9789474515</span>
-        </button>
-      </a>
+
+<!-- Ooty and Kodaikanal sections are above -->
+
+<section class="tour-section">
+    <div class="tour-container">
+      <h2 class="tour-heading">Coimbatore to Ooty 3-Day Tour Package</h2>
+      <div class="tour-flex">
       
-      <a href="https://api.whatsapp.com/send?phone=+919789474515" target="_blank">
-        <button class="btn-floating whatsapp">
-          <img src="https://i.imgur.com/LBW2Lso.png" alt="WhatsApp">
-          <span>+919789474515</span>
-        </button>
-      </a>
+        <div class="tour-details">
+          <h3>3-Day Itinerary by Praneeth Travels</h3>
+          <ul>
+            <li>Doddabetta Peak</li>
+            <li>Tea Museum</li>
+            <li>Botanical Garden</li>
+            <li>Rose Garden</li>
+            <li>Ooty Lake</li>
+            <li>Coonoor Sims Park</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="tour-includes">
+        <h3>Package Includes:</h3>
+        <ul>
+          <li>✅ AC Vehicle with Driver</li>
+          <li>✅ Toll, Parking, Fuel, Driver Allowance</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="tour-pricing">
+        <h3>Vehicle Options & Pricing:</h3>
+        <table>
+          <thead>
+            <tr><th>Vehicle</th><th>Type</th><th>Price (INR)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>SWIFT DZIRE A/C</td><td>Sedan</td><td>Rs.10,100</td></tr>
+            <tr><td>TOYOTA Etios A/C</td><td>Sedan</td><td>Rs.10,100</td></tr>
+            <tr><td>ERTIGA A/C</td><td>MUV</td><td>Rs.12,850</td></tr>
+            <tr><td>INNOVA A/C</td><td>SUV</td><td>Rs.13,450</td></tr>
+            <tr><td>INNOVA CRYSTA A/C</td><td>—</td><td>Rs.17,800</td></tr>
+            <tr><td>Traveller A/C (14-seater)</td><td>Mini Van</td><td>Rs.20,300</td></tr>
+            <tr><td>Coach Van A/C (21-seater)</td><td>Mini Bus</td><td>Rs.24,550</td></tr>
+          </tbody>
+        </table>
+        <p><strong>Free KM:</strong> 350 km</p>
+      </div>
+      <div class="tour-contact">
+        <a href="tel:+919994165165">Book Now with Praneeth Travels: +91 99941 65165</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Existing Munnar, Ooty-Mysore, and Wayanad sections remain below -->
+
+  <section class="tour-section">
+    <div class="tour-container">
+      <h2 class="tour-heading">Coimbatore to Kodaikanal 3-Day Tour Package</h2>
+      <div class="tour-flex">
+       
+        <div class="tour-details">
+          <h3>3-Day Itinerary by Praneeth Travels</h3>
+          <ul>
+            <li>Silver Cascade Falls</li>
+            <li>Kodai Lake</li>
+            <li>Bryant Park</li>
+            <li>Cocker's Walk</li>
+            <li>Pine Forest</li>
+            <li>Guna Cave</li>
+            <li>Pillar Rock</li>
+            <li>Green Valley View</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="tour-includes">
+        <h3>Package Includes:</h3>
+        <ul>
+          <li>✅ AC Vehicle with Driver</li>
+          <li>✅ Toll, Parking, Fuel, Driver Allowance</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="tour-pricing">
+        <h3>Vehicle Options & Pricing:</h3>
+        <table>
+          <thead>
+            <tr><th>Vehicle</th><th>Type</th><th>Price (INR)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>SWIFT DZIRE A/C</td><td>Sedan</td><td>Rs.12,050</td></tr>
+            <tr><td>TOYOTA Etios A/C</td><td>Sedan</td><td>Rs.12,050</td></tr>
+            <tr><td>ERTIGA A/C</td><td>MUV</td><td>Rs.15,330</td></tr>
+            <tr><td>INNOVA A/C</td><td>SUV</td><td>Rs.16,050</td></tr>
+            <tr><td>INNOVA CRYSTA A/C</td><td>—</td><td>Rs.21,200</td></tr>
+            <tr><td>Traveller A/C (14-seater)</td><td>Mini Van</td><td>Rs.23,700</td></tr>
+            <tr><td>Coach Van A/C (21-seater)</td><td>Mini Bus</td><td>Rs.28,350</td></tr>
+          </tbody>
+        </table>
+        <p><strong>Free KM:</strong> 520 km</p>
+      </div>
+      <div class="tour-contact">
+        <a href="tel:+919994165165">Book Now with Praneeth Travels: +91 99941 65165</a>
+      </div>
+    </div>
+  </section>
+    
+
+
+
+   <!-- Ooty and Kodaikanal sections are above -->
+
+
+
+<section class="tour-section">
+  <div class="tour-container">
+    <h2 class="tour-heading">Coimbatore to Munnar 3-Day Tour Package</h2>
+    <div class="tour-flex">
+    
+      <div class="tour-details">
+        <h3>3-Day Itinerary by Praneeth Travels</h3>
+        <ul>
+          <li>Valara Falls, Cheeyappara Falls, Tea Museum, Photo Point</li>
+          <li>Mattupetty Dam, Kundala Lake, Echo Point, Top Station</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="tour-includes">
+      <h3>Package Includes:</h3>
+      <ul>
+        <li>✅ AC Vehicle with Driver</li>
+        <li>✅ Toll, Parking, Fuel, Driver Allowance</li>
+      </ul>
+    </div>
+    <hr>
+    <div class="tour-pricing">
+      <h3>Vehicle Options & Pricing:</h3>
+      <table>
+        <thead>
+          <tr><th>Vehicle</th><th>Type</th><th>Price (INR)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>SWIFT DZIRE A/C</td><td>Sedan</td><td>Rs.13,450</td></tr>
+          <tr><td>TOYOTA Etios A/C</td><td>Sedan</td><td>Rs.13,450</td></tr>
+          <tr><td>ERTIGA A/C</td><td>MUV</td><td>Rs.17,300</td></tr>
+          <tr><td>INNOVA A/C</td><td>SUV</td><td>Rs.18,250</td></tr>
+          <tr><td>INNOVA CRYSTA A/C</td><td>—</td><td>Rs.24,600</td></tr>
+          <tr><td>Traveller A/C (14-seater)</td><td>Mini Van</td><td>Rs.27,400</td></tr>
+          <tr><td>Coach Van A/C (21-seater)</td><td>Mini Bus</td><td>Rs.33,150</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Free KM:</strong> 520 km</p>
+    </div>
+    <div class="tour-contact">
+      <a href="tel:+919994165165">Book Now with Praneeth Travels: +91 99941 65165</a>
+    </div>
+  </div>
+</section>
+
+<section class="tour-section">
+  <div class="tour-container">
+    <h2 class="tour-heading">Coimbatore to Ooty-Mysore 3-Day Tour Package</h2>
+    <div class="tour-flex">
+    
+      <div class="tour-details">
+        <h3>3-Day Itinerary by Praneeth Travels</h3>
+        <ul>
+          <li>Ooty - Doddabetta Peak, Rose Garden, Botanical Garden, Lake</li>
+          <li>Mysore - Mysore Palace, Chamundi Hills, Brindavan Gardens, Zoo</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="tour-includes">
+      <h3>Package Includes:</h3>
+      <ul>
+        <li>✅ AC Vehicle with Driver</li>
+        <li>✅ Toll, Parking, Fuel, Driver Allowance</li>
+      </ul>
+    </div>
+    <hr>
+    <div class="tour-pricing">
+      <h3>Vehicle Options & Pricing:</h3>
+      <table>
+        <thead>
+          <tr><th>Vehicle</th><th>Type</th><th>Price (INR)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>SWIFT DZIRE A/C</td><td>Sedan</td><td>Rs.14,350</td></tr>
+          <tr><td>TOYOTA Etios A/C</td><td>Sedan</td><td>Rs.14,350</td></tr>
+          <tr><td>ERTIGA A/C</td><td>MUV</td><td>Rs.18,400</td></tr>
+          <tr><td>INNOVA A/C</td><td>SUV</td><td>Rs.19,100</td></tr>
+          <tr><td>INNOVA CRYSTA A/C</td><td>—</td><td>Rs.25,400</td></tr>
+          <tr><td>Traveller A/C (14-seater)</td><td>Mini Van</td><td>Rs.29,500</td></tr>
+          <tr><td>Coach Van A/C (21-seater)</td><td>Mini Bus</td><td>Rs.35,050</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Free KM:</strong> 600 km</p>
+    </div>
+    <div class="tour-contact">
+      <a href="tel:+919994165165">Book Now with Praneeth Travels: +91 99941 65165</a>
+    </div>
+  </div>
+</section>
+
+<section class="tour-section">
+  <div class="tour-container">
+    <h2 class="tour-heading">Coimbatore to Wayanad 3-Day Tour Package</h2>
+    <div class="tour-flex">
+     
+      <div class="tour-details">
+        <h3>3-Day Itinerary by Praneeth Travels</h3>
+        <ul>
+          <li>Banasura Sagar Dam, Pookode Lake, Soochipara Falls</li>
+          <li>Edakkal Caves, Lakkidi Viewpoint, Chain Tree</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="tour-includes">
+      <h3>Package Includes:</h3>
+      <ul>
+        <li>✅ AC Vehicle with Driver</li>
+        <li>✅ Toll, Parking, Fuel, Driver Allowance</li>
+      </ul>
+    </div>
+    <hr>
+    <div class="tour-pricing">
+      <h3>Vehicle Options & Pricing:</h3>
+      <table>
+        <thead>
+          <tr><th>Vehicle</th><th>Type</th><th>Price (INR)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>SWIFT DZIRE A/C</td><td>Sedan</td><td>Rs.14,700</td></tr>
+          <tr><td>TOYOTA Etios A/C</td><td>Sedan</td><td>Rs.14,700</td></tr>
+          <tr><td>ERTIGA A/C</td><td>MUV</td><td>Rs.18,800</td></tr>
+          <tr><td>INNOVA A/C</td><td>SUV</td><td>Rs.19,550</td></tr>
+          <tr><td>INNOVA CRYSTA A/C</td><td>—</td><td>Rs.25,950</td></tr>
+          <tr><td>Traveller A/C (14-seater)</td><td>Mini Van</td><td>Rs.29,850</td></tr>
+          <tr><td>Coach Van A/C (21-seater)</td><td>Mini Bus</td><td>Rs.35,400</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Free KM:</strong> 620 km</p>
+    </div>
+    <div class="tour-contact">
+      <a href="tel:+919994165165">Book Now with Praneeth Travels: +91 99941 65165</a>
+    </div>
+  </div>
+</section>
+
+      
+<a href="tel:+919789474515">
+  <button class="btn-floating phone">
+    <img src="https://i.imgur.com/FZuns9L.png" alt="Phone">
+    <span>
+      +91 9789474515</span>
+  </button>
+</a>
+
+<a href="https://api.whatsapp.com/send?phone=+919789474515" target="_blank">
+  <button class="btn-floating whatsapp">
+    <img src="https://i.imgur.com/LBW2Lso.png" alt="WhatsApp">
+    <span>+919789474515</span>
+  </button>
+</a>
+
   
     <footer class="footer-section">
         <div class="footer-top-wrap bg-grey">

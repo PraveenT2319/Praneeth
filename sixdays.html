@@ -33,6 +33,115 @@
     <link rel="stylesheet" href="assets/css/blog.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <style>.tour-section {
+        padding: 30px 15px;
+        background: #fff;
+        border-bottom: 1px solid #ddd;
+      }
+    
+      .tour-container {
+        max-width: 1140px;
+        margin: 0 auto;
+      }
+    
+      .tour-heading {
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #222;
+        text-align: center;
+        font-weight: bold;
+        position: relative;
+      }
+    
+      .tour-heading::after {
+        content: "";
+        width: 60px;
+        height: 4px;
+        background: #28a745;
+        display: block;
+        margin: 10px auto 0;
+        border-radius: 2px;
+      }
+    
+      .tour-flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+      }
+    
+      .tour-image img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 10px;
+        transition: transform 0.4s ease;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+    
+      .tour-image img:hover {
+        transform: scale(1.05);
+      }
+    
+      .tour-details,
+      .tour-includes,
+      .tour-pricing {
+        margin-top: 20px;
+      }
+    
+      .tour-details ul,
+      .tour-includes ul {
+        padding-left: 20px;
+        line-height: 1.8;
+      }
+    
+      .tour-pricing table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+    
+      .tour-pricing th,
+      .tour-pricing td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+      }
+    
+      .tour-pricing th {
+        background-color: #f8f8f8;
+      }
+    
+      .tour-contact {
+        text-align: center;
+        margin-top: 30px;
+      }
+    
+      .tour-contact a {
+        display: inline-block;
+        background: #28a745;
+        color: #fff;
+        padding: 12px 25px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: 600;
+        transition: background 0.3s ease;
+      }
+    
+      .tour-contact a:hover {
+        background: #1e7e34;
+      }
+    
+      @media (max-width: 768px) {
+        .tour-flex {
+          flex-direction: column;
+        }
+        .tour-heading {
+          font-size: 22px;
+        }
+        .tour-pricing table, .tour-pricing th, .tour-pricing td {
+          font-size: 14px;
+        }
+      }</style>
 </head>
 
 <body>
@@ -130,40 +239,40 @@
                     </div>
                     <!--/.site-logo-->
                     <div class="header-menu-wrap">
-                        <ul class="nav-menu">
-                            <li><a href="index.html">Home</a></li>
-                                   <li><a href="about.html">About</a></li>
-                                   <li class="active dropdown_menu">
-                                     <a href="#">Tour Packages</a>
-                                     <ul>
-                                         <li><a href="Oneday.html">1 Day Tour Packages</a></li>
-                                         <li><a href="twodays.html">2 Day Tour Packages</a></li>
-                                         <li><a href="threeday.html">3 Day Tour Packages</a></li>
-                                         <li><a href="fourdays.html">4 Day Tour Packages</a></li>
-                                         <li><a href="fivedays.html">5 Day Tour Packages</a></li>
-                                         <li><a href="sixdays.html">6 Day Tour Packages</a></li>
-                                         <li><a href="temple.html">Temples Tour Packages</a></li>
+                      <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                               <li><a href="about.html">About</a></li>
+                               <li class=" dropdown_menu">
+                                 <a href="#">Tour Packages</a>
+                                 <ul>
+                                     <li><a href="Oneday.html">1 Day Tour Packages</a></li>
+                                     <li><a href="twodays.html">2 Day Tour Packages</a></li>
+                                     <li><a href="threeday.html">3 Day Tour Packages</a></li>
+                                     <li><a href="fourdays.html">4 Day Tour Packages</a></li>
+                                     <li><a href="fivedays.html">5 Day Tour Packages</a></li>
+                                     <li><a href="sixdays.html">6 Day Tour Packages</a></li>
+                                     <li><a href="temple.html">Temples Tour Packages</a></li>
 
-                                     </ul>
-                                 </li>
-                                 <li class="active dropdown_menu">
-                                     <a href="#">Tariff</a>
-                                     <ul>
-                                      <li><a href="outstationduty.html">Outstation Duty Day Basis.</a></li>
-                                         <li><a href="outstationdutyinkm.html">Outstation Duty km Basis</a></li>
-                                         <li><a href="localduty.html">Local Duty Hour Basis  </a></li>
-                                         <li><a href="fixeddrop.html">Fixed Drop Services</a></li>
-                                      
+                                 </ul>
+                             </li>
+                             <li class=" dropdown_menu">
+                                 <a href="#">Tariff</a>
+                                 <ul>
+                                     <li><a href="outstationduty.html">Outstation Duty Day Basis.</a></li>
+                                     <li><a href="outstationduty.html">Outstation Duty km Basis</a></li>
+                                     <li><a href="localduty.html">Local Duty Hour Basis  </a></li>
+                                     <li><a href="fixeddrop.html">Fixed Drop Services</a></li>
+                                  
 
-                                     </ul>
-                                 </li>
-                              
+                                 </ul>
+                             </li>
+                            
 
-                                          <li><a href="Fleet.html">Fleet</a></li>
-                                                 <li><a href="gallery.html">Gallery</a></li>
-                     
-                         <li><a href="contact.html">Contact</a></li>
-                     </ul>
+                                      <li><a href="Fleet.html">Fleet</a></li>
+                                             <li><a href="gallery.html">Gallery</a></li>
+                 
+                     <li><a href="contact.html">Contact</a></li>
+                 </ul>
                     </div>
                     <div class="menu-right-item">
                        
@@ -223,84 +332,196 @@
         <div class="page-header-shape"></div>
         <div class="container">
             <div class="page-header-info">
-                <h4>Gallery</h4>
+                <h4>6 Day Tour Packages</h4>
             </div>
         </div>
     </section>
     <!--/.page-header-->
 
-    <section class="team-section padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 padding-15">
-                    <div class="team-item">
-                        <div class="team-thumb">
-                            <img src="assets/img/car/car_01.png" alt="thumb">
-                        </div>
-                      
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 padding-15">
-                    <div class="team-item">
-                        <div class="team-thumb">
-                            <img src="assets/img/car/car_02.png" alt="thumb">
-                        </div>
-                      
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 padding-15">
-                    <div class="team-item">
-                        <div class="team-thumb">
-                            <img src="assets/img/car/car_03.png     " alt="thumb">
-                        </div>
-                       
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 padding-15">
-                    <div class="team-item">
-                        <div class="team-thumb">
-                            <img src="assets/img/car/car_04.png" alt="thumb">
-                        </div>
-                     
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 padding-15">
-                    <div class="team-item">
-                        <div class="team-thumb">
-                            <img src="assets/img/car/car_05.png" alt="thumb">
-                        </div>
-                       
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 padding-15">
-                    <div class="team-item">
-                        <div class="team-thumb">
-                            <img src="assets/img/car/car_06.png" alt="thumb">
-                        </div>
-                       
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 padding-15">
-                    <div class="team-item">
-                        <div class="team-thumb">
-                            <img src="assets/img/car/seat.png" alt="thumb">
-                        </div>
-                      
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 padding-15">
-                    <div class="team-item">
-                        <div class="team-thumb">
-                            <img src="assets/img/car/seat_03.png" alt="thumb">
-                        </div>
-                       
-                    </div>
-                </div>
-            </div>
+
+<!-- Ooty and Kodaikanal sections are above -->
+
+<section class="tour-section">
+    <div class="tour-container">
+      <h2 class="tour-heading">Coimbatore – Ooty – Wayanad – Mysore – Coorg – Coimbatore (6-Day Tour Package)</h2>
+      <div class="tour-flex">
+        
+        <div class="tour-details">
+          <h3>6-Day Itinerary by Praneeth Travels</h3>
+          <ul>
+            <li><strong>Day 1:</strong> Arrival and transfer to Coonoor. Visit Dolphin’s Nose, Tea Gardens, Lamb’s Rock, and Sim’s Park.</li>
+            <li><strong>Day 2:</strong> Ooty sightseeing including Doddabetta Peak, Tea Museum, Botanical Garden, Rose Garden, Ooty Lake, and Pykara Falls & Boating.</li>
+            <li><strong>Day 3:</strong> Visit popular sightseeing spots in Wayanad.</li>
+            <li><strong>Day 4:</strong> Proceed to Mysore. Visit Chamundi Hill, Mysore Zoo, Mysore Palace, and Brindavan Gardens (KRS Dam). Overnight stay at Mysore.</li>
+            <li><strong>Day 5:</strong> Proceed to Coorg. Visit Golden Temple, Kaveri Nisargadhama, Abbey Falls, Raja’s Seat, Omkareshwara Temple, and Madikeri Fort.</li>
+            <li><strong>Day 6:</strong> After breakfast, return to Coimbatore Airport or Railway Station.</li>
+          </ul>
         </div>
-    </section>
-    <!--/.team-section-->
-    <a href="tel:+919789474515">
+      </div>
+      <hr>
+      <div class="tour-includes">
+        <h3>Package Includes:</h3>
+        <ul>
+          <li>✅ AC Vehicle with Driver</li>
+          <li>✅ Toll, Parking, Fuel, Driver Allowance</li>
+        </ul>
+        <p><strong>Free KM:</strong> 1250 km</p>
+        <p><em>Note: Tempo Traveller and Coach Van interstate permit charges and tax charges extra.</em></p>
+      </div>
+      <hr>
+      <div class="tour-pricing">
+        <h3>Vehicle Options & Pricing:</h3>
+        <table>
+          <thead>
+            <tr><th>Vehicle</th><th>Type</th><th>Price (INR)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>SWIFT DZIRE A/C</td><td>Sedan</td><td>Rs.26,950</td></tr>
+            <tr><td>TOYOTA Etios A/C</td><td>Sedan</td><td>Rs.26,950</td></tr>
+            <tr><td>ERTIGA A/C</td><td>MUV</td><td>Rs.34,330</td></tr>
+            <tr><td>INNOVA A/C</td><td>SUV</td><td>Rs.36,790</td></tr>
+            <tr><td>INNOVA CRYSTA A/C</td><td>—</td><td>Rs.45,450</td></tr>
+            <tr><td>Traveller A/C (14-seater)</td><td>Mini Van</td><td>Rs.53,700</td></tr>
+            <tr><td>Coach Van A/C (21-seater)</td><td>Mini Bus</td><td>Rs.63,250</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tour-contact">
+        <a href="tel:+919994165165">Book Now with Praneeth Travels: +91 99941 65165</a>
+      </div>
+    </div>
+  </section>
+
+
+  
+<!-- Six Days South India Tour Package - Praneeth Travels -->
+
+<section class="tour-section">
+  <div class="tour-container">
+    <h2 class="tour-heading">Coimbatore – Kodaikanal – Madurai – Rameswaram – Kanyakumari – Coimbatore (6-Day Tour Package)</h2>
+
+    <div class="tour-flex">
+      <div class="tour-details">
+        <h3>6-Day Itinerary by Praneeth Travels</h3>
+        <ul>
+          <li><strong>Day 1:</strong> Depart from Coimbatore. Visit <strong>Palani Temple</strong>, <strong>Silver Cascade Falls</strong>, and <strong>Kodaikanal Museum</strong>. Overnight stay at Kodaikanal.</li>
+          <li><strong>Day 2:</strong> Explore <strong>Pine Forest</strong>, <strong>Guna Caves</strong>, <strong>Pillar Rocks</strong>, <strong>Green Valley View</strong>, <strong>Coaker’s Walk</strong>, <strong>Bryant Park</strong>, <strong>Kodai Lake</strong>, and <strong>Kurinji Andavar Temple</strong>.</li>
+          <li><strong>Day 3:</strong> Transfer from Kodaikanal to Madurai. Visit <strong>Sri Meenakshi Temple</strong> and continue journey to Rameswaram.</li>
+          <li><strong>Day 4:</strong> Sightseeing in Rameswaram: <strong>Sri Ramanathaswamy Temple</strong>, local temples, and <strong>Dr. A.P.J. Abdul Kalam Memorial</strong>. Proceed to Kanyakumari.</li>
+          <li><strong>Day 5:</strong> Full-day sightseeing at Kanyakumari.</li>
+          <li><strong>Day 6:</strong> Return to Coimbatore.</li>
+        </ul>
+        <p><strong>Total Distance Covered:</strong> 1510 KM</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="tour-includes">
+      <h3>Package Includes:</h3>
+      <ul>
+        <li>✅ Well-maintained AC Vehicle</li>
+        <li>✅ Toll, Parking & Permit Charges</li>
+        <li>✅ Driver Allowance</li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <div class="tour-pricing">
+      <h3>Vehicle Options & Pricing:</h3>
+      <table>
+        <thead>
+          <tr><th>Vehicle</th><th>Type</th><th>AC</th><th>Price (INR)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Swift Dzire</td><td>Sedan</td><td>✅</td><td>₹29,580</td></tr>
+          <tr><td>Toyota Etios</td><td>Sedan</td><td>✅</td><td>₹29,580</td></tr>
+          <tr><td>Ertiga</td><td>MUV</td><td>✅</td><td>₹38,040</td></tr>
+          <tr><td>Innova</td><td>SUV</td><td>✅</td><td>₹40,740</td></tr>
+          <tr><td>Innova Crysta</td><td>Premium SUV</td><td>✅</td><td>₹48,880</td></tr>
+          <tr><td>Traveller (14-Seater)</td><td>Mini Van</td><td>✅</td><td>₹59,900</td></tr>
+          <tr><td>Coach Van (21-Seater)</td><td>Mini Bus</td><td>✅</td><td>₹70,450</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tour-contact" style="margin-top: 20px;">
+      <a href="tel:+919XXXXXXXXX" style="background-color:#28a745;color:white;padding:12px 24px;text-decoration:none;border-radius:6px;font-weight:bold;">
+        📞 Book Your Trip Now with Praneeth Travels
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Six Days South India Tour Package - Day Night Tours & Travels -->
+<section class="tour-section">
+  <div class="tour-container">
+    <h2 class="tour-heading">Coimbatore – Ooty – Kodaikanal – Munnar – Coimbatore (6-Day Tour Package)</h2>
+    
+    <div class="tour-flex">
+      <div class="tour-details">
+        <h3>6-Day Itinerary by Day Night Tours & Travels</h3>
+        <ul>
+          <li><strong>Day 1:</strong> Doddabetta Peak, Botanical Garden, Rose Garden, Ooty Lake, Shooting Spot, Pykara Waterfalls & Lake.</li>
+          <li><strong>Day 2:</strong> Coonoor - Dolphin’s Nose, Tea Gardens, Lamb’s Rock, Sims Park.</li>
+          <li><strong>Day 3:</strong> Silver Cascade Falls, Kodai Lake, Bryant Park, Coaker’s Walk, Pine Forest, Guna Cave, Pillar Rock, Green Valley View.</li>
+          <li><strong>Day 4:</strong> Munnar - Echo Point, Elephant Camp, Rose Garden, Mattupetty Dam, Chinnar Wildlife Sanctuary, Top Station, Tata Tea Museum.</li>
+          <li><strong>Day 5:</strong> Rajamalai Wildlife Sanctuary, Power House Falls, Lakkam Waterfalls, Sandalwood Forest, Green Valley View, Thoovanam Waterfalls.</li>
+          <li><strong>Day 6:</strong> Return journey to Coimbatore.</li>
+        </ul>
+        <p><strong>Total Distance Covered:</strong> 1050 KM</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="tour-includes">
+      <h3>Package Includes:</h3>
+      <ul>
+        <li>✅ Well-maintained AC Vehicle</li>
+        <li>✅ Toll, Parking & Permit Charges</li>
+        <li>✅ Driver Allowance</li>
+        <li>✅ Interstate Permit Charges</li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <div class="tour-pricing">
+      <h3>Vehicle Options & Pricing:</h3>
+      <table>
+        <thead>
+          <tr><th>Vehicle</th><th>Type</th><th>AC</th><th>Price (INR)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Swift Dzire</td><td>Sedan</td><td>✅</td><td>₹24,100</td></tr>
+          <tr><td>Toyota Etios</td><td>Sedan</td><td>✅</td><td>₹24,100</td></tr>
+          <tr><td>Ertiga</td><td>MUV</td><td>✅</td><td>₹30,670</td></tr>
+          <tr><td>Innova</td><td>SUV</td><td>✅</td><td>₹32,950</td></tr>
+          <tr><td>Innova Crysta</td><td>Premium SUV</td><td>✅</td><td>₹40,750</td></tr>
+          <tr><td>Traveller (14-Seater)</td><td>Mini Van</td><td>✅</td><td>₹48,400</td></tr>
+          <tr><td>Coach Van (21-Seater)</td><td>Mini Bus</td><td>✅</td><td>₹56,950</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tour-contact">
+      <a href="tel:+919XXXXXXXXX" style="background-color:#007bff;color:white;padding:12px 24px;text-decoration:none;border-radius:6px;font-weight:bold;">
+        📞 Book Now with Day Night Tours & Travels
+      </a>
+    </div>
+  </div>
+</section>
+
+      
+      
+      
+      <!-- The remaining sections stay unchanged. You can apply the same class names for styling consistently. -->
+      
+      <!-- Repeat the structure for Kodaikanal, Munnar, Valparai, Palani, and Guruvayur sections as per your need. -->
+      
+      <a href="tel:+919789474515">
         <button class="btn-floating phone">
           <img src="https://i.imgur.com/FZuns9L.png" alt="Phone">
           <span>
@@ -314,6 +535,7 @@
           <span>+919789474515</span>
         </button>
       </a>
+
   
     <footer class="footer-section">
         <div class="footer-top-wrap bg-grey">
