@@ -33,60 +33,93 @@
     <link rel="stylesheet" href="assets/css/blog.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <style>body {
-        font-family: 'Segoe UI', sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-      .tour-container {
-        max-width: 1100px;
-        margin: 40px auto;
-        padding: 30px;
-      }
-      .tour-heading {
-        text-align: center;
-        color: #1e3d59;
-        font-size: 28px;
-        margin-bottom: 25px;
-      }
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 15px;
-        margin-bottom: 10px;
-      }
-      th, td {
-        border: 1px solid #ddd;
-        padding: 12px;
-        text-align: center;
-      }
-      th {
-        background-color: #f0f4fa;
-        color: #1e3d59;
-      }
-      .tour-contact {
-        text-align: center;
-        margin-top: 25px;
-      }
-      .tour-contact a {
-        display: inline-block;
-        padding: 12px 30px;
-        background-color: #007bff;
-        color: white;
-        text-decoration: none;
-        border-radius: 6px;
-        font-size: 16px;
-      }
-      .tour-contact a:hover {
-        background-color: #0056b3;
-      }
-      .notes {
-        padding: 15px;
+    <style>
+        .tour-section {
+          font-family: Arial, sans-serif;
+          padding: 20px;
+          background-color: #f9f9f9;
+        }
         
-        margin-top: 25px;
-        line-height: 1.6;
-        background-color: #f9f9f9;
-      }</style>
+        .tour-container {
+          max-width: 1200px;
+          margin: auto;
+        }
+        
+        .tour-heading {
+          font-size: 24px;
+          margin-bottom: 20px;
+          text-align: center;
+          color: #2c3e50;
+        }
+        
+        .tour-pricing {
+          overflow-x: auto;
+          background: white;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+        
+        .tour-pricing table {
+          width: 100%;
+          min-width: 800px; /* forces horizontal scroll on small screens */
+          border-collapse: collapse;
+        }
+        
+        .tour-pricing th,
+        .tour-pricing td {
+          border: 1px solid #ccc;
+          padding: 10px;
+          text-align: center;
+          font-size: 14px;
+        }
+        
+        .tour-pricing th {
+          background-color: #f2f2f2;
+        }
+        
+        .notes {
+          margin-top: 15px;
+          font-size: 13px;
+          color: #555;
+        }
+        
+        .notes p {
+          margin: 4px 0;
+        }
+        
+        .tour-contact {
+          margin-top: 20px;
+          text-align: center;
+        }
+        
+        .tour-contact a {
+          background-color: #3498db;
+          color: white;
+          padding: 10px 20px;
+          text-decoration: none;
+          border-radius: 5px;
+          display: inline-block;
+        }
+        
+        .tour-contact a:hover {
+          background-color: #2980b9;
+        }
+        
+        /* Responsive tweaks */
+        @media (max-width: 768px) {
+          .tour-heading {
+            font-size: 20px;
+          }
+        
+          .tour-contact a {
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 16px;
+          }
+        }
+        </style>
+        
+        
 </head>
 
 <body>
@@ -124,15 +157,14 @@
                     </div>
                     <div class="top-right">
                         <ul class="top-header-nav">
-                            <li><a href="faqs.html">Help</a></li>
-                            <li><a href="contact.html">Support</a></li>
-                            <li><a href="faqs.html">FAQ</a></li>
+                           <li><a href="#">Help</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">FAQ</a></li>
                         </ul>
                         <ul class="header-social-share">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=61562098111004"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.instagram.com/satcivil?utm_source=qr&igsh=dHE2em5ramNjdHp3"><i class="fab fa-instagram"></i></a></li>
+                           
                         </ul>
                     </div>
                 </div>

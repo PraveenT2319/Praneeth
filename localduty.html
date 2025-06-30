@@ -33,60 +33,111 @@
     <link rel="stylesheet" href="assets/css/blog.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <style> body {
-        font-family: 'Segoe UI', sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-      .tour-container {
-        max-width: 1100px;
-        margin: 40px auto;
-        padding: 30px;
-      }
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    .tour-section {
+      padding: 20px;
+    }
+
+    .tour-container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .tour-heading {
+      font-size: 22px;
+      text-align: center;
+      color: #2c3e50;
+      margin: 20px 0;
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+      background: #fff;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    }
+
+    table {
+      width: 100%;
+      min-width: 700px;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #ddd;
+      font-size: 14px;
+    }
+
+    th {
+      background-color: #f0f0f0;
+      font-weight: bold;
+    }
+
+    .tour-contact {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .tour-contact a {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .tour-contact a:hover {
+      background-color: #0056b3;
+    }
+
+    .notes {
+      font-size: 13px;
+      margin-top: 10px;
+      color: #666;
+    }
+
+    .notes p {
+      margin: 4px 0;
+    }
+
+    @media (max-width: 600px) {
       .tour-heading {
-        text-align: center;
-        color: #1e3d59;
-        font-size: 28px;
-        margin-bottom: 25px;
+        font-size: 18px;
       }
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 15px;
-        margin-bottom: 10px;
-      }
+
       th, td {
-        border: 1px solid #ddd;
-        padding: 12px;
-        text-align: center;
+        font-size: 13px;
+        padding: 8px;
       }
-      th {
-        background-color: #f0f4fa;
-        color: #1e3d59;
-      }
-      .tour-contact {
-        text-align: center;
-        margin-top: 25px;
-      }
+
       .tour-contact a {
-        display: inline-block;
-        padding: 12px 30px;
-        background-color: #007bff;
-        color: white;
-        text-decoration: none;
-        border-radius: 6px;
-        font-size: 16px;
+        font-size: 14px;
+        padding: 8px 16px;
       }
-      .tour-contact a:hover {
-        background-color: #0056b3;
-      }
-      .notes {
-        padding: 15px;
-        border-left: 5px solid #1e3d59;
-        margin-top: 25px;
-        line-height: 1.6;
-        background-color: #f9f9f9;
-      }</style>
+    }
+    </style>
+        
+        
+        
+        
+        
 </head>
 
 <body>
@@ -124,15 +175,14 @@
                     </div>
                     <div class="top-right">
                         <ul class="top-header-nav">
-                            <li><a href="faqs.html">Help</a></li>
-                            <li><a href="contact.html">Support</a></li>
-                            <li><a href="faqs.html">FAQ</a></li>
+                           <li><a href="#">Help</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">FAQ</a></li>
                         </ul>
                         <ul class="header-social-share">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=61562098111004"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.instagram.com/satcivil?utm_source=qr&igsh=dHE2em5ramNjdHp3"><i class="fab fa-instagram"></i></a></li>
+                           
                         </ul>
                     </div>
                 </div>
@@ -283,71 +333,69 @@
     </section>
     <!--/.page-header-->
 
-
     <section class="tour-section">
         <div class="tour-container">
           <h2 class="tour-heading">Coimbatore Local Tariff – 8 Hours</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Vehicle</th>
-                <th>Type</th>
-                <th>Free km</th>
-                <th>Price / Hours</th>
-                <th>Price / Km</th>
-                <th>Extra Hours</th>
-                <th>Extra KM</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>SWIFT DZIRE A/C</td><td>Sedan</td><td>80 km</td><td>Rs. 2450</td><td>Rs. 13</td><td>Rs. 250</td><td>—</td></tr>
-              <tr><td>TOYOTA Etios A/C</td><td>Sedan</td><td>80 km</td><td>Rs. 2450</td><td>Rs. 13</td><td>Rs. 250</td><td>—</td></tr>
-              <tr><td>ERTIGA</td><td>MUV</td><td>80 km</td><td>Rs. 3600</td><td>Rs. 15</td><td>Rs. 300</td><td>—</td></tr>
-              <tr><td>INNOVA A/C</td><td>SUV</td><td>80 km</td><td>Rs. 3600</td><td>Rs. 15</td><td>Rs. 300</td><td>—</td></tr>
-              <tr><td>INNOVA CRYSTA A/C</td><td>SUV</td><td>80 km</td><td>Rs. 4400</td><td>Rs. 17</td><td>Rs. 500</td><td>—</td></tr>
-              <tr><td>Traveller A/C (14-seater)</td><td>Mini Van</td><td>80 km</td><td>Rs. 4600</td><td>Rs. 20</td><td>Rs. 600</td><td>—</td></tr>
-              <tr><td>Coach Van (21-seater)</td><td>Mini Bus</td><td>80 km</td><td>Rs. 5600</td><td>Rs. 26</td><td>Rs. 700</td><td>—</td></tr>
-            </tbody>
-          </table>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Vehicle</th>
+                  <th>Type</th>
+                  <th>Free km</th>
+                  <th>Price / Hours</th>
+                  <th>Price / Km</th>
+                  <th>Extra Hours</th>
+                  <th>Extra KM</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>SWIFT DZIRE A/C</td><td>Sedan</td><td>80 km</td><td>Rs. 2450</td><td>Rs. 13</td><td>Rs. 250</td><td>—</td></tr>
+                <tr><td>TOYOTA Etios A/C</td><td>Sedan</td><td>80 km</td><td>Rs. 2450</td><td>Rs. 13</td><td>Rs. 250</td><td>—</td></tr>
+                <tr><td>ERTIGA</td><td>MUV</td><td>80 km</td><td>Rs. 3600</td><td>Rs. 15</td><td>Rs. 300</td><td>—</td></tr>
+                <tr><td>INNOVA A/C</td><td>SUV</td><td>80 km</td><td>Rs. 3600</td><td>Rs. 15</td><td>Rs. 300</td><td>—</td></tr>
+                <tr><td>INNOVA CRYSTA A/C</td><td>SUV</td><td>80 km</td><td>Rs. 4400</td><td>Rs. 17</td><td>Rs. 500</td><td>—</td></tr>
+                <tr><td>Traveller A/C (14-seater)</td><td>Mini Van</td><td>80 km</td><td>Rs. 4600</td><td>Rs. 20</td><td>Rs. 600</td><td>—</td></tr>
+                <tr><td>Coach Van (21-seater)</td><td>Mini Bus</td><td>80 km</td><td>Rs. 5600</td><td>Rs. 26</td><td>Rs. 700</td><td>—</td></tr>
+              </tbody>
+            </table>
+          </div>
+    
           <div class="tour-contact">
             <a href="tel:+919994165165">Book Now: +91 99941 65165</a>
           </div>
     
           <h2 class="tour-heading">Coimbatore Local Tariff – 10 Hours</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Vehicle</th>
-                <th>Type</th>
-                <th>Free km</th>
-                <th>Price / Hours</th>
-                <th>Price / Km</th>
-                <th>Extra Hours</th>
-                <th>Extra KM</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>SWIFT DZIRE A/C</td><td>Sedan</td><td>100 km</td><td>Rs. 2650</td><td>Rs. 13</td><td>Rs. 250</td><td>—</td></tr>
-              <tr><td>TOYOTA Etios A/C</td><td>Sedan</td><td>100 km</td><td>Rs. 2650</td><td>Rs. 13</td><td>Rs. 250</td><td>—</td></tr>
-              <tr><td>ERTIGA A/C</td><td>MUV</td><td>100 km</td><td>Rs. 3600</td><td>Rs. 15</td><td>Rs. 300</td><td>—</td></tr>
-              <tr><td>INNOVA A/C</td><td>SUV</td><td>100 km</td><td>Rs. 3600</td><td>Rs. 15</td><td>Rs. 300</td><td>—</td></tr>
-              <tr><td>INNOVA CRYSTA A/C</td><td>SUV</td><td>100 km</td><td>Rs. 4700</td><td>Rs. 17</td><td>Rs. 500</td><td>—</td></tr>
-              <tr><td>Traveller A/C (14-seater)</td><td>Mini Van</td><td>100 km</td><td>Rs. 5000</td><td>Rs. 20</td><td>Rs. 600</td><td>—</td></tr>
-              <tr><td>Coach Van (21-seater)</td><td>Mini Bus</td><td>100 km</td><td>Rs. 6000</td><td>Rs. 26</td><td>Rs. 700</td><td>—</td></tr>
-            </tbody>
-          </table>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Vehicle</th>
+                  <th>Type</th>
+                  <th>Free km</th>
+                  <th>Price / Hours</th>
+                  <th>Price / Km</th>
+                  <th>Extra Hours</th>
+                  <th>Extra KM</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>SWIFT DZIRE A/C</td><td>Sedan</td><td>100 km</td><td>Rs. 2650</td><td>Rs. 13</td><td>Rs. 250</td><td>—</td></tr>
+                <tr><td>TOYOTA Etios A/C</td><td>Sedan</td><td>100 km</td><td>Rs. 2650</td><td>Rs. 13</td><td>Rs. 250</td><td>—</td></tr>
+                <tr><td>ERTIGA A/C</td><td>MUV</td><td>100 km</td><td>Rs. 3600</td><td>Rs. 15</td><td>Rs. 300</td><td>—</td></tr>
+                <tr><td>INNOVA A/C</td><td>SUV</td><td>100 km</td><td>Rs. 3600</td><td>Rs. 15</td><td>Rs. 300</td><td>—</td></tr>
+                <tr><td>INNOVA CRYSTA A/C</td><td>SUV</td><td>100 km</td><td>Rs. 4700</td><td>Rs. 17</td><td>Rs. 500</td><td>—</td></tr>
+                <tr><td>Traveller A/C (14-seater)</td><td>Mini Van</td><td>100 km</td><td>Rs. 5000</td><td>Rs. 20</td><td>Rs. 600</td><td>—</td></tr>
+                <tr><td>Coach Van (21-seater)</td><td>Mini Bus</td><td>100 km</td><td>Rs. 6000</td><td>Rs. 26</td><td>Rs. 700</td><td>—</td></tr>
+              </tbody>
+            </table>
+          </div>
     
           <div class="notes">
             <p>• Parking and toll charges are not included in the fare.</p>
             <p>• Total kilometers and travel time will be calculated from office to office.</p>
             <p>• Driver allowance will be applicable for driving between 10:00 PM and 6:00 AM.</p>
           </div>
-    
-          <div class="tour-contact">
-            <a href="tel:+919994165165">Book Now: +91 99941 65165</a>
-          </div>
-        </div>
-      </section>
       
       <!-- The remaining sections stay unchanged. You can apply the same class names for styling consistently. -->
       
